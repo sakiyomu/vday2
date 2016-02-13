@@ -1,0 +1,262 @@
+/* styles written in this file is for Standard */
+
+
+.clearfix:after{
+	content:		".";
+	display:		block;
+	visibility:		hidden;
+	height:			0.1px;
+	font-size:		0.1em;
+	line-height:		0;
+	clear:			both;
+}
+
+.clearfix{
+	zoom:			100%;
+}
+
+
+*{
+	margin:			0;
+	padding:		0;
+}
+
+input,button,select,textarea{outline:none;-webkit-appearance:none;-webkit-box-shadow:none;}
+textarea{resize:none;}
+
+html{
+	font-size:		62.5%;
+}
+
+body{
+	font-family:		'微软雅黑','Microsoft YaHei',sans-serif,Helvetica,Arial;
+	font-size:		16px;
+	font-size:		1.6rem;
+	line-height:		1.6;
+	background:		#fff;
+	color:			#333;
+	text-shadow:		1px 1px 1px #000;
+}
+
+#wrapper{
+}
+
+
+.fadein{
+	margin:			0 auto;
+	width:			320px;
+}
+
+.fadein span{
+	opacity:		0;
+}
+
+
+
+#🌹{
+	position:		relative;
+	height:			100%;
+	overflow:		hidden;
+}
+
+#🌹 .🍀{
+	background:		#000;
+	width:			100%;
+	height:			100%;
+}
+
+#🌹 .🍀 .inner{
+	position:		fixed;
+	bottom:			0;
+	left:			50%;
+	margin-left:		-345px;
+	width:			690px;
+	height:			500px;
+	background:		url(../img/rose1.jpg) no-repeat center bottom;
+	background-size:	contain;
+	animation:		fade 5s ease-out;
+}
+
+@keyframes fade{
+0% {opacity:0;transform:scale(0.8,0.8);}
+100% {opacity:1;transform:scale(1,1);}
+}
+
+
+
+#🌹 .sec2{
+	background:		#AEDFE4;
+	display:		none;
+}
+
+
+#🌹 .🌀{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	width:			100%;
+	background:		url(../img/bg01.png) no-repeat center center;
+	background-size:	cover;
+	animation:		rotateLeft 50s infinite linear;
+}
+
+#🌹 .💐{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-242px 0 0 -200px;
+	opacity:		0;
+}
+#🌹 .💐.go{
+	animation:		zoom 0.5s ease-in;
+}
+
+#🌹 .btn1{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-11px 0 0 -56px;
+	width:			112px;
+	height:			22px;
+	color:			#fff;
+	display:		none;
+	animation:		bounce 1s infinite ease;
+}
+
+@keyframes bounce {
+	0%, 100% {top: 50%;}
+	50% {top: 52%;}
+}
+
+
+#🌹 .sec3{
+	display:		none;
+}
+
+#🌹 .babysbreath{
+	position:		fixed;
+	bottom:			0;
+	left:			0;
+	margin:			0 0 0 0;
+	background:		url(../img/bg03.jpg) no-repeat center top;
+	background-size:	cover;
+	//display:		none;
+}
+
+#🌹 .🌺{
+	position:		fixed;
+	bottom:			0;
+	left:			0;
+	margin:			0 0 0 0;
+	//display:		none;
+}
+
+#🌹 .sec3 .txtArea{
+	position:		fixed;
+	top:			17%;
+	left:			50%;
+	margin:			0 0 0 -120px;
+	width:			240px;
+	color:			#fff;
+	text-shadow:		1px 1px 1px #7C491C;
+}
+
+
+
+
+@keyframes rotateRight{
+0% {transform:rotate(0deg);}
+100% {transform:rotate(360deg);}
+}
+
+@keyframes rotateLeft{
+0% {transform:rotate(360deg);}
+100% {transform:rotate(0deg);}
+}
+
+@keyframes zoom{
+0% {opacity:0;transform:scale(0.5,0.5);}
+70% {opacity:1;transform:scale(1,1);}
+80% {opacity:1;transform:scale(1.1,1.1);}
+90% {opacity:1;transform:scale(0.9,0.9);}
+100% {opacity:1;transform:scale(1,1);}
+}
+
+
+
+
+.music-icon {
+	display:		block;
+	position:		absolute;
+	right:			20px;
+	top:			20px;
+	background-image: url("../img/music_icon.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.play{
+	animation:15s linear 0s normal none infinite rotate;
+}
+
+@keyframes rotate{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+
+
+
+#form{
+	display:		none;
+	position:		fixed;
+	top:			20%;
+	left:			50%;
+	margin:			0 0 0 -140px;
+	width:			280px;
+	text-align:		center;
+}
+
+#form input{
+	box-sizing:		border-box;
+	border:			1px solid #b8b8b8;
+	border-right:		0;
+	border-radius:		0;
+	box-shadow:		none;
+	padding:		0 10px;
+	width:			200px;
+	height:			35px;
+	font-size:		14px;
+	font-size:		1.4rem;
+	color:			#666;
+}
+
+#form input:focus{
+	border:			1px solid #2d78f4;
+	border-right:		0;
+	color:			#333;
+}
+
+#form button{
+	box-sizing:		border-box;
+	border:			1px solid #2d78f4;
+	background:		#2d78f4;
+	width:			80px;
+	height:			35px;
+	font-size:		15px;
+	font-size:		1.5rem;
+	color:			#fff;
+	cursor:			pointer;
+}
+
+
+
+#qLoverlay{
+	//display:		none;
+}
+
+
+
